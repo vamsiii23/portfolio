@@ -1,0 +1,14 @@
+{
+  "name": "vamsisportfolio",
+  "version": "1.0.0",
+  "description": "Vamsi's_Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass sass/main.scss css/style.css"
+  },
+  "author": "Vamsi_Krishna",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.71.1"
+  }
+}

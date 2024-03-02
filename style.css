@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    font-size: 62.5%;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+.header {
+    display: flex;
+    background: rgb(62,84,247);
+    background: linear-gradient(147deg, rgba(62,84,247,1) 0%, rgba(133,139,216,1) 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+}
+.side-panel {
+    width: 4vw;
+    border-right: .1rem solid white;
+    height: 95vh;
+    position: relative;
+}
+.main-panel {
+    width: 96vw;
+    height: 95vh;
+}
+
+.navbar {
+    display: flex;
+    float: right;
+    padding: 1.5rem;
+
+}
+
+
+.sociallinks {
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+
+}
+.sociallinks i {
+    padding: 1rem .2rem;
+}
+
+@keyframes moveInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(1rem);
+    }
+    80% {
+      transform: translateY(-0.5rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+.btn:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.btn:active {
+    transform: translateY(-0.1rem);
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 10rem;
+    transition: all .75s;
+    position: relative;
+}
+.btn--white {
+    background-color: #fff;
+    color: black;
+    padding: .5rem 1rem;
+    display: inline-block;
+    border-radius: 10rem;
+    font-size: 1rem;
+}
+.btn {
+    animation-name: moveInUp;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+  }
+
+.myinfo {
+    width: 50rem;
+    color: white;
+    font-size: 2rem;
+    padding: 3rem;
+    animation: opa 1s ease-in;
+    position: absolute;
+    top: 5rem;
+}
+
+
+@keyframes opa {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+
+  }
+}
+
+
+
+@keyframes moveInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(3rem);
+    }
+    80% {
+      transform: translateX(-0,2rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+.nam {
+    font-size: 2rem;
+    color: white;
+    font-weight: 400;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    position: absolute;
+    left: 5rem;
+    top: 1rem;
+}
+.stu {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 400;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    position: absolute;
+    left: 5rem;
+    top: 3.4rem;
+}
+
+.page2{
+  width: 100vw;
+  height: 100vh;
+  background: rgb(62,84,247);
+  background: linear-gradient(147deg, rgba(62,84,247,1) 0%, rgba(133,139,216,1) 100%);
+  clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
+} 
+
+.loremp2 {
+  color: white;
+  padding: 15rem ;
+  left: 1.5rem;
+  font-size: 1.5rem;
+}

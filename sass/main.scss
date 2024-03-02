@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.header {
+    display: flex;
+
+}
+.side-panel {
+    width: 4vw;
+    border-right: 2px solid black;
+    height: 100vh;
+}
+.main-panel {
+    width: 96vw;
+    height: 100vh;
+    background-color: aqua;
+}
